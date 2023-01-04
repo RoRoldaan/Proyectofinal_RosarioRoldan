@@ -84,13 +84,6 @@ header nav ul li{
     
 }
 
-/*.reseteoListas a:link
-a:visited,
-a:active{
-    
-}
-NOTA Averiguar para que era este codiguito*/
-
 .mainIndex img{
     width: 47%;
     display: inline-block;
@@ -128,36 +121,15 @@ footer{
 
 }
 
-/* .contenedorPrincipal{
-    height: 100 vh (alto total del dispositivo)
-    display: grid;
-    grid-template-columns: ;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
 
-Para alinear segun area de trabajo
+/*MEDIA QUERIES*/ 
 
-    grid-template-areas: "header header header" (tres columnas)
-                          "main  main    main"
-                          "footer footer footer;
+@media (max-width:1281px) and (min-width:320px) { 
 
-debo definirlo en los hijos, decirle vos sos el area que se llama "..."
-
-header{
-    grid-area: header; (mismo nombre que le puse en grid template area)
-
-1rem 16px*/
-
-
-media queries
-
-@media screen and (min-width:600px) {
-    display: block;
+    
 }
-
-@media screen and (min-width:1024px) {
-    display: block;
-
-}
+ 
+ 
 
 /* PROPIEDADES DE GALERIA*/
 
@@ -172,6 +144,10 @@ media queries
 .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   /* grid-row: 0.5fr 2fr 0.5fr;
+    grid-template-areas:"header header header header"
+                         "main main main main"
+                         "footer footer footer footer"; ESTO ME ACHICA LAS IMAGENES Y NO ME LAS ACOMODA*/
     width: 95%;
     margin: auto;
     grid-gap: 10px;
@@ -255,4 +231,8 @@ media queries
 
 }
 
-/*responsive*/
+.contenedor{
+
+    height: 100vh;
+
+}
